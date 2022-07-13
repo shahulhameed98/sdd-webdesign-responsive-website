@@ -12,6 +12,9 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
+
+		<link rel="stylesheet" href="glider.min.css" />
+
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
@@ -115,6 +118,94 @@
 			</section>
 			<!-- Project -->
 		</div>
+
+		<section class="testimonials-section">
+			<div class="wrapper">
+				<h2>Testimonials</h2>
+				<div class="testimonials-container">
+					<div class="testimonials">
+						<div class="testimonial">
+							<div class="slide-container">
+								<div class="content">
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Reiciendis a velit recusandae, impedit nisi neque
+										reprehenderit voluptas, incidunt itaque quidem atque maxime
+										autem quod laboriosam repellendus nobis error beatae!
+										Corrupti.
+									</p>
+									<div class="name"><span class="name">Emma,</span> Amazon</div>
+								</div>
+								<img src="./images/Testimonial1.png" alt="" />
+							</div>
+						</div>
+
+						<div class="testimonial">
+							<div class="slide-container">
+								<div class="content">
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Reiciendis a velit recusandae, impedit nisi neque
+										reprehenderit voluptas, incidunt itaque quidem atque maxime
+										autem quod laboriosam repellendus nobis error beatae!
+										Corrupti.
+									</p>
+									<div class="name">
+										<span class="name">Karthick,</span> Intellivision
+									</div>
+								</div>
+								<img src="./images/Testimonial2.png" alt="" />
+							</div>
+						</div>
+
+						<div class="testimonial">
+							<div class="slide-container">
+								<div class="content">
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Reiciendis a velit recusandae, impedit nisi neque
+										reprehenderit voluptas, incidunt itaque quidem atque maxime
+										autem quod laboriosam repellendus nobis error beatae!
+										Corrupti.
+									</p>
+									<div class="name">
+										<span class="name">Tara,</span> GroupOn
+									</div>
+								</div>
+								<img src="./images/Testimonial3.png" alt="" />
+							</div>
+						</div>
+					</div>
+
+					<span class="slider-prev">
+						<img src="./images/LeftArrow.svg" alt="" />
+					</span>
+
+					<span class="slider-next">
+						<img src="./images/RightArrow.svg" alt="" />
+					</span>
+
+					<div role="tablist" class="dots-container">
+						<div class="dots"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- //Testimonials -->
+
+		<script src="glider.min.js"></script>
+
+		<script>
+			new Glider(document.querySelector(".testimonials"), {
+				slidesToShow: 1,
+				dots: ".dots",
+				arrows: {
+					prev: ".slider-prev",
+					next: ".slider-next",
+				},
+			});
+		</script>
 
 		<script src="main.js"></script>
 	</body>
